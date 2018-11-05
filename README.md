@@ -1,0 +1,1 @@
+# dsc-2-20-10-type-1-and-type-2-errors

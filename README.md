@@ -169,3 +169,7 @@ plt.xlabel('Number of Coin Flips')
 
 ![png](index_files/index_18_1.png)
 
+
+## Summary
+
+Great! You now know what type 1 and type 2 errors are. Let's go and practice your knowledge!

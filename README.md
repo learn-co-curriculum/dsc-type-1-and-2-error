@@ -50,7 +50,7 @@ Different scenarios call for scientists to minimize one type of error over anoth
 
 * $H_{1} : defendant \neq innocent$
 
-<img src="./jury.jpeg">
+<img src="./images/jury.jpeg">
 
 Hopefully you said a Type 1 error! A Type 1 error would mean that you would send someone to jail when they were truly not guilty! In other words, the jury has rejected the null hypothesis that the defendant is innocent, even though he has not committed any crime. Of course, we would also not want to have a Type 2 error because this would mean that someone actually has committed a crime, and the jury is letting them get away with it.
 
@@ -61,7 +61,7 @@ Let's take a look at an example of a medical scenario. A patient with symptoms o
 * $H_{1} : patient \neq healthy$
 
 
-<img src="./doctor.jpg" style="width: 280px;"/>
+<img src="./images/doctor.jpg" style="width: 280px;"/>
 
 Hopefully you said a Type 2 error! A Type 2 error would mean that the patient actually has a brain tumor, but the doctor claims there is nothing wrong with them. In other words, the null hypothesis is that the person has no brain tumor, and this hypothesis fails to be rejected, meaning the person is diagnosed as healthy when in actuality, they are far from it.
 
@@ -88,7 +88,7 @@ coin1
 
 
 
-    14
+    15
 
 
 
@@ -128,7 +128,7 @@ z
 
 
 
-    8.0
+    10.0
 
 
 
@@ -141,7 +141,7 @@ z
 
 
 
-    8.0
+    10.0
 
 
 
@@ -160,13 +160,13 @@ st.norm.sf(np.abs(z))
 
 
 
-    6.22096057427174e-16
+    7.61985302416047e-24
 
 
 
 This is an absolutely tiny p-value, meaning that you can reject the null hypothesis *this coin is fair* and conclude that the coin is unfair!
 
-Here is a demonstration of how the average 
+Here is a demonstration of how the average p-values change as the size of the sample increases.
 
 
 ```python

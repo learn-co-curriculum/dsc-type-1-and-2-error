@@ -50,8 +50,6 @@ Different scenarios call for scientists to minimize one type of error over anoth
 
 * $H_{1} : defendant \neq innocent$
 
-<img src="./images/jury.jpeg">
-
 Hopefully you said a Type 1 error would be worse! A Type 1 error would mean that you would send someone to jail when they were truly not guilty! In other words, the jury has rejected the null hypothesis that the defendant is innocent, even though he has not committed any crime. Of course, you would also not want to have a Type 2 error because this would mean that someone actually has committed a crime, and the jury is letting them get away with it.
 
 Let's take a look at an example of a medical scenario. A patient with symptoms of a consistent headache goes to a doctor's office and gets an MRI scan of their head because the doctor suspects the patient might have a brain tumor. Would it be worse to have a Type 1 or Type 2 error in this scenario?
@@ -61,7 +59,7 @@ Let's take a look at an example of a medical scenario. A patient with symptoms o
 * $H_{1} : patient \neq healthy$
 
 
-<img src="./images/doctor.jpg" style="width: 280px;"/>
+<img src="./images/new_doctor.png" width="500">
 
 Hopefully you said a Type 2 error would be worse! A Type 2 error would mean that the patient actually has a brain tumor, but the doctor claims there is nothing wrong with them. In other words, the null hypothesis is that the person has no brain tumor, and this hypothesis fails to be rejected, meaning the person is diagnosed as healthy when in actuality, they are far from it.
 

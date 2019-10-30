@@ -12,10 +12,9 @@ There are times, however, when researchers reject the null hypothesis when they 
 
 You will be able to:
 
-* Explain why alpha = 0.05 is chosen as the cut-off point for rejecting the Null hypothesis in most scientific experiments
-* Simulate type I and type II errors with alpha control to observe the output of an experiment
-* Describe and differentiate between type I and type II errors
-* Understand alpha and beta for representing false positive and false negative values
+* Define Type I and Type II errors
+* Describe the relationship between alpha and Type I errors
+* Differentiate how Type I and Type II errors relate to the p and z-value
 
 ## Alpha and Type I Errors
 

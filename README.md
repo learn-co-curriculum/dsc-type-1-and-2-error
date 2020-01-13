@@ -128,19 +128,6 @@ z
 
 
 
-
-```python
-z = (coin1 - 10) / (sigma / np.sqrt(n))
-z
-```
-
-
-
-
-    10.0
-
-
-
 Finally, you can take your $z$-score and apply standard lookup tables based on your knowledge of the normal distribution to determine the probability 
 
 
@@ -202,7 +189,7 @@ plt.xlabel('Number of Coin Flips')
 
 
 
-![png](index_files/index_16_1.png)
+![png](index_files/index_15_1.png)
 
 
 ## Summary

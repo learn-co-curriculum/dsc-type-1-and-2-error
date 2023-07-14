@@ -111,13 +111,13 @@ sigma
 
 And with that you can now calculate a p-value using a traditional $z$-test:
 
-### $ z = \frac{\bar{x}-\mu}{\sigma/\sqrt{n}}$
+### $ z = \frac{\bar{x}-\mu}{\sigma/\1}$
 
 Here, $\bar{x}$ is the number of heads, $\mu$ (mu) is the expected number of heads (10), $\sigma$ (sigma) is the standard deviation (calculated above) and n is the number of observations (20).
 
 
 ```python
-z = (coin1 - 10) / (sigma / np.sqrt(n))
+z = (coin1 - 10) / (sigma / 1)
 z
 ```
 
@@ -172,7 +172,7 @@ for n in range(1,50):
         n_heads = np.random.binomial(n, p)
         mu = n / 2
         sigma = np.sqrt(n*.5*(1-.5))
-        z  = (n_heads - mu) / (sigma / np.sqrt(n))
+        z  = (n_heads - mu) / (sigma / 1)
         p_val.append(st.norm.sf(np.abs(z)))
     p_vals.append(np.mean(p_val))
 plt.plot(list(range(1,50)), p_vals)

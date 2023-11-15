@@ -1,4 +1,3 @@
-
 # Type I and Type II errors
 
 ## Introduction
@@ -81,13 +80,6 @@ coin1 = np.random.binomial(n, p)
 coin1
 ```
 
-
-
-
-    15
-
-
-
 In this case, you know the theoretical mean and standard deviation of a fair coin; it can be modeled by a binomial distribution with p = 0.5. In future cases, you'll often use a t-test (as you've already previewed) in order to compare samples, but don't know the overall population statistics.
 
 The standard deviation of a binomial distribution is given by:  
@@ -102,16 +94,9 @@ sigma = np.sqrt(n*.5*(1-.5))
 sigma
 ```
 
-
-
-
-    2.23606797749979
-
-
-
 And with that you can now calculate a p-value using a traditional $z$-test:
 
-### $ z = \frac{\bar{x}-\mu}{\sigma/\1}$
+### $$ z = \frac{\bar{x}-\mu}{\sigma/1}$$
 
 Here, $\bar{x}$ is the number of heads, $\mu$ (mu) is the expected number of heads (10), $\sigma$ (sigma) is the standard deviation (calculated above) and n is the number of observations (20).
 
@@ -120,13 +105,6 @@ Here, $\bar{x}$ is the number of heads, $\mu$ (mu) is the expected number of hea
 z = (coin1 - 10) / (sigma / 1)
 z
 ```
-
-
-
-
-    10.0
-
-
 
 Finally, you can take your $z$-score and apply standard lookup tables based on your knowledge of the normal distribution to determine the probability 
 
@@ -139,13 +117,6 @@ import scipy.stats as st
 ```python
 st.norm.sf(np.abs(z))
 ```
-
-
-
-
-    7.61985302416047e-24
-
-
 
 This is an absolutely tiny p-value, meaning that you can reject the null hypothesis *this coin is fair* and conclude that the coin is unfair!
 
@@ -172,7 +143,7 @@ for n in range(1,50):
         n_heads = np.random.binomial(n, p)
         mu = n / 2
         sigma = np.sqrt(n*.5*(1-.5))
-        z  = (n_heads - mu) / (sigma / 1)
+        z  = (n_heads - mu) / (sigma / np.sqrt(n))
         p_val.append(st.norm.sf(np.abs(z)))
     p_vals.append(np.mean(p_val))
 plt.plot(list(range(1,50)), p_vals)
@@ -180,17 +151,6 @@ plt.title('Average P-Values Associated with Hypothesis Testing of a .75 Unfair C
 plt.ylabel('Average P-Value of Simulations')
 plt.xlabel('Number of Coin Flips')
 ```
-
-
-
-
-    Text(0.5,0,'Number of Coin Flips')
-
-
-
-
-![png](index_files/index_15_1.png)
-
 
 ## Summary
 
